@@ -1,0 +1,451 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Body*/
+.background-image{
+    background-image: url("../media/banner.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+}
+
+/* Custom styles */
+.body{
+    line-height:1.5;
+}
+/* ................................................................homepage.......................................................................................... */
+.homepage{
+    text-align: center;
+}
+/*...................................................................Flex class...................................................................*/
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Social Media*/
+
+.socialmedia-homepage{
+    padding:20px 0;
+}
+
+
+.social-home{
+    display: inline-block;
+    background-color: white;
+    color:grey;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+}
+
+/*Header*/
+.header-homepage{
+    width:1400px;
+    margin:0 auto;
+    background-color: white;
+    height: 100px;
+    line-height: 100px;
+    margin:20px auto;
+    position: fixed;
+    left:200px;
+    top:90px;
+}
+
+.brand-name{
+    font-size: 40px;
+    padding: 0 10px;
+    color:orangered;
+}
+.nav-home{
+    display: inline-block;
+    color:grey;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin:0 24px;
+    font-size: 16px;
+}
+
+.orange{
+    color: orangered;
+    border-top: 2px solid orangered;
+}
+
+/*Main section*/
+
+.main{
+    margin: 100px auto 0px auto;
+    padding:100px;
+}
+.heading-hero{
+    font-size: 54px;
+    color: white;
+}
+
+hr{
+    border:0.5px solid white;
+    width: 450px;
+}
+.description-hero{
+    font-size: 24px;
+    color: white;
+    margin:10px auto;
+}
+
+.button-hero{
+    background-color: orangered;
+    border-radius: 5px;
+    color:white;
+    border:0;
+    padding:10px 15px;
+    font-weight:700;
+}
+
+/*Page Marker*/
+.page-marker{
+    text-align: center;
+}
+.circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top:10px;
+}
+
+.cir1{
+    background-color: black;
+}
+.cir2{
+    background-color: grey;
+}
+.cir3{
+    background-color: grey;
+}
+
+/*.............................................................Container...........................................................................................*/
+
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    text-align: center;
+}
+
+/*......................................................Universal h2 and p styling and padding-top and bottom................................................................................*/
+.universal-h2{
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: underline 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.universal-p{
+    font-size:20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.padding-section{
+    padding:70px 0;
+}
+/*..................................................................Clearfix......................................................................................*/
+.clearfix::before,.clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+
+
+/*..............................................................Services............................................................................................*/
+.service-display{
+    padding:20px 0;
+}
+
+.service-box{
+    background-color: hotpink;
+    display:inline-block;
+    width:22.75%;
+    height: 300px;
+    line-height: 300px;
+    vertical-align: top;
+    font-size: 40px;
+    color: white;
+}
+
+.service-box1{
+    background-color: cadetblue;
+    margin-right: 3%;
+    text-align: center;
+}
+
+.service-box2{
+    background-color:coral;
+    margin-right: 3%;
+}
+.service-box3{
+    background-color:cornflowerblue;
+    margin-right: 3%;
+}
+.service-box4{
+    background-color:lightgreen;
+}
+
+/*...................................................................Portfolio.....................................................................................*/
+
+
+.port-box{
+    display:block;
+    width:22.75%; 
+    float:left;
+}
+
+.port-box1,.port-box2,.port-box3{
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+
+.port-box5,.port-box6,.port-box7{
+    margin-right: 3%;
+}
+
+/*.....................................................................Team.........................................................................................*/
+.team-display{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-box{
+    display:block;
+    width:22.75%;
+    border-radius: 50%;
+}
+
+/*.........................................................................Design....................................................................*/
+.design h2{
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.design p{
+    font-size:12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.design-display{
+    display:flex;
+}
+.seventy{
+    text-align: left;
+    width: 70%;
+    margin-right:1.5%;
+}
+.thirty{
+    width:30%;
+}
+.grey{
+    background-color:lightgrey;
+    margin-bottom: 10px;
+}
+.design-chart{
+    text-align: left;
+    border:0px;
+    padding:5px;
+    background-color:orangered;
+}
+
+/*...............................................................Contact............................................................................................*/
+.map{
+    width: 100%;
+}
+.contact-display{
+    display: flex;
+}
+.form{
+    text-align: left;
+    color: grey;
+    border:1px solid lightgrey;
+    margin-bottom: 5px;
+    padding:7px;
+}
+.message{
+    padding-bottom: 130px;
+}
+button.form-btn{
+    background-color: orangered;
+    color: white;
+    border:0;
+    width: 100%;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+span.email{
+    color: orangered;
+}
+
+
+/*.....................................................Footer.........................................................................................................*/
+button.top{
+    background-color: orangered;
+    border:0;
+    padding:10px;
+    text-transform:uppercase;
+}
+.backtop{
+    text-decoration: none;
+    color: white;
+}
+/*......................................................Gallery........................................................................................................*/
+.aside{
+    width:30%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: orangered;
+    padding: 20px;
+    box-sizing: border-box;
+
+    
+    
+}
+
+.gallery-header{
+    height:70px;
+    line-height:70px;
+    margin:0 10px;
+}
+
+.logo-gallery{
+    width:70px;
+    height:70px;
+}
+.brand-name-gallery{
+    font-size: 40px;
+    padding: 0 10px;
+    color:white;
+}
+
+.nav-home-gallery{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+}
+.btn-gallery{
+    background-color:orangered;
+    border:1px solid white;
+    border-radius: 5px;
+    padding:8px 12px;
+}
+
+
+.description h2{
+    color:white;
+    font-size: 32px;
+}
+
+.description p{
+    padding:10px 0;
+}
+
+.hero-gallery{
+    width:70%;
+    margin-left: 468px;
+    text-align: center;
+}
+
+.social-home-gallery{
+    display: inline-block;
+    color:white;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border:1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+}
+.gallery-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.column-1,.column-2{
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+}
+
+.gal{
+    width:100%;
+    margin-bottom: 15px;
+    border:2px solid black;
+    border-radius: 5px;
+}
+
