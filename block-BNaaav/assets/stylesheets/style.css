@@ -54,7 +54,7 @@ table {
 
 /*Body*/
 .background-image{
-    background-image: url("../media/banner.jpg");
+    background-image: url("/banner.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     
